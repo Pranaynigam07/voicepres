@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Voice Prescription Template </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- pdf make cdn's -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js" integrity="sha512-uO6vGk8coV9uDaoMwYUTVO2nQ3XS4MVePe6qVif3PkiYRZ2y+707M4HOdaYPF0jqxhgNenarJ/1RlfRTs37SeA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.min.js" integrity="sha512-VIF8OqBWob/wmCvrcQs27IrQWwgr3g+iA4QQ4hH/YeuYBIoAUluiwr/NX5WQAQgUaVx39hs6l05cEOIGEB+dmA==" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/landingpage.css' %}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: MeFamily - v4.1.0
+  * Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">Voice Prescription</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="active">Welcome {{ob}}!!!!!</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Reports</a></li>
+                    <li><a href="#contact">Make an Appointment</a></li>
+                    <li><a href="{%url 'logout'%}">Logout</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(/assets/images/julia-zyablova-S1v7hVUiCg0-unsplash.jpg)">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(/assets/images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg)">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(/assets/images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg)">
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= My & Family Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Your Report</h2>
+                    <p>you can download your report here</p>
+                </div>
+
+                <!-- <div class="row content">
+                    <div class="col-lg-6">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum.
+                        </p>
+                        <a href="our-story.html" class="btn-learn-more">Learn More</a>
+                    </div>
+                </div> -->
+                <div class="row content">
+                    <!-- Tab area start -->
+                    <table class="table table-hover table-dark table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">CASE_ID</th>
+                                <th scope="col">Name of the Patient</th>
+                                <th scope="col">Report</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in dt %}
+                            <tr>
+                                <th scope="row">{{i.case_id}}</th>
+                                <td>{{i.name}}</td>
+                                <td><button type="button" class="btn btn-link" onclick="generatePdf('{{i.case_id}}','Dr.Pranay','{{i.Diagnosis}}','{{i.name}}','{{i.Prescription}}','{{i.Advice}}')">Download</button></td>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <!-- Tab area end -->
+                </div>
+
+            </div>
+        </section>
+        <!-- End My & Family Section -->
+        <!-- start of application -->
+        <section id="contact" class="contact-us">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Place Your Details Here</h2>
+                    <p>Enter your details</p>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-12 mt-5 mt-lg-0">
+                        <form action="patient_register" method="POST" role="form" class="php-email-form">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder={{ob}} value={{ob}} readonly>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter Your Symptoms" data-rule="minlen:4" required>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Enter your problem in detail" required></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <!-- <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div> -->
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- endo of application -->
+
+
+
+
+        <!-- End Recent Photos Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src=" {% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        // script for generating reports
+        function generatePdf(caseid, doctorname, diagnosis, patientname, pres, adv) {
+            var current = new Date();
+            var date = current.toLocaleString();
+            var docDefinition = {
+                watermark: {
+                    text: 'AUTO GENERATED MEDICAL REPORT',
+                    color: 'blue',
+                    opacity: 0.2,
+                    bold: true,
+                    italics: false
+                },
+                content: [{
+                        text: "MEDICAL REPORT",
+                        color: 'red',
+                        style: 'header',
+                        alignment: 'center'
+                    }, {
+                        text: "\nCASE ID: " + caseid,
+                        style: 'sideheadings',
+                        alignment: 'left'
+                    }, {
+                        text: "\nPatient Name: " + patientname,
+                        style: 'sideheadings',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: "\n\n\nReport: ",
+                        style: 'sideheadings',
+                        alignment: 'center',
+                        color: 'red'
+                    }, {
+                        text: "\n\nDiagnosis Predicted ",
+                        style: 'download',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: diagnosis,
+                        style: 'maincontent',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: "\n\nPrescribed Tablets: ",
+                        style: 'download',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: pres,
+                        style: 'maincontent',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: "\n\nAdvice ",
+                        style: 'download',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: adv,
+                        style: 'maincontent',
+                        alignment: 'left',
+                        italics: true
+                    }, {
+                        text: "\n\nPRESCRIBED BY",
+                        style: 'doctor',
+                        alignment: 'left'
+                    }, {
+                        text: doctorname,
+                        style: 'doctor',
+                        alignment: 'left'
+                    }, {
+                        text: "\n\nDownloaded on: " + date,
+                        style: 'download',
+                        alignment: 'left'
+                    }
+
+
+                ],
+                styles: {
+                    header: {
+                        fontSize: 24,
+                        bold: true,
+                        alignment: 'justify'
+                    },
+                    sideheadings: {
+                        fontSize: 16,
+                        bold: true,
+                    },
+                    maincontent: {
+                        fontSize: 18,
+                        bold: false,
+                        alignment: 'justify'
+                    },
+                    doctor: {
+                        fontSize: 16,
+                        bold: true,
+                        alignment: 'justify'
+                    },
+                    download: {
+                        fontSize: 14,
+                        bold: true,
+                        alignment: 'left'
+                    }
+
+
+                }
+            }
+            pdfMake.createPdf(docDefinition).download();
+        }
+    </script>
+
+</body>
+
+</html>
